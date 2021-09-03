@@ -68,6 +68,12 @@ module.exports = class MessageReactionAddEvent extends BaseEvent {
       target.roles.add(gtavRole);
 
     }
+    if(reaction.emoji.id === "ID") {
+      
+      let valorantRole = message.guild.roles.cache.find(role => role.id === "id")
+      target.roles.add(valorantRole);
+    
+    }
 
 
   }
