@@ -33,7 +33,7 @@ module.exports = class GenerateCommand extends BaseCommand {
     let gamesEmbed = new MessageEmbed()
     .setColor("RANDOM")
     .setTitle("Choisissez vos jeux")
-    .setDescription(`Bienvenue sur le serveur GAME MIND !\nPour continuer, s'il vous plaît réagissez avec les réactions des jeux de cette liste:\n\n<:brawlhalla:882385056499384401> Brawlhalla\n<:r6:882385523329617920> R6S\n<:minecraft:882385816494686269> Minecraft\n<:cs:882386380192358431> CS:GO\n<:gtav:882386671465795675> GTAV\n<:valorant:id> Valorant`)
+    .setDescription(`Bienvenue sur le serveur GAME MIND !\nPour continuer, s'il vous plaît réagissez avec les réactions des jeux de cette liste:\n\n<:brawlhalla:882385056499384401> Brawlhalla\n<:r6:882385523329617920> R6S\n<:minecraft:882385816494686269> Minecraft\n<:cs:882386380192358431> CS:GO\n<:gtav:882386671465795675> GTAV\n<:valorant:883825256639365130> Valorant\n<:fortnite:883824947988930571> Fortnite`)
     .setFooter("GAME MIND TEAM")
 
     rulesChannel.send(gamesEmbed).then(msg => {
@@ -42,7 +42,8 @@ module.exports = class GenerateCommand extends BaseCommand {
       msg.react("<:minecraft:882385816494686269>");
       msg.react("<:cs:882386380192358431>");
       msg.react("<:gtav:882386671465795675>");
-      msg.react("<:valorant:id>");
+      msg.react("<:valorant:883825256639365130>");
+      msg.react("<:fortnite:883824947988930571>")
     });
 
     return message.channel.send(`Embed envoyé dans <#881700036067602432> :thumbsup:`).then(msg => msg.delete({timeout: 3000}))
