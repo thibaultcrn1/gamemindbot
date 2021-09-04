@@ -65,6 +65,12 @@ module.exports = class MessageReactionRemoveEvent extends BaseEvent {
       target.roles.remove(gtavRole);
 
     }
+    if(reaction.emoji.id === "") {
+    
+      let valorantRole = message.guild.roles.cache.find(role => role.id === "id");
+      target.roles.remove(valorantRole);
+    
+    }
 
   }
 }
