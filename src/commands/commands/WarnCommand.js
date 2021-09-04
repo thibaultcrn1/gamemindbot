@@ -11,7 +11,7 @@ module.exports = class WarnCommand extends BaseCommand {
     }
 
     async run(client, message, args) {
-        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: Vous n'avez pas la permission.");
+        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(":x: Vous n'avez pas la permission :/");
         
         const bdd = require("../../utils/datas/warns.json");
 
