@@ -10,6 +10,6 @@ const client = new Client();
   client.prefix = config.prefix;
   await registerCommands(client, '../commands');
   await registerEvents(client, '../events');
-  await client.login(process.env.TOKEN);
+  await client.login(config.token);
 })();
 
