@@ -2,5 +2,6 @@
   "name": "gamemind",
   "language": "javascript",
   "manager": "npm",
+  "token": "",
   "prefix": "g!"
 }
